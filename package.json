@@ -1,0 +1,12 @@
+{
+  "name": "shree-ram-wholesale-mart",
+  "version": "1.0.0",
+  "description": "Shree Ram Wholesale Mart and Rudra's Corner",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
