@@ -1,1654 +1,1488 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#76133b">
-
-<title>Shree Ram Wholesale Mart | Quality • Trust • Tradition</title>
-
-<meta name="description" content="Welcome to Shree Ram Wholesale Mart. Discover beautiful sarees, traditional fashion and wholesale quality with trust and elegance.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --wine: #76133b;
-  --wine-dark: #4b0925;
-  --pink: #f9e8ef;
-  --gold: #d9ad62;
-  --cream: #fffaf6;
-  --text: #30242a;
-  --muted: #75656c;
-  --white: #ffffff;
-  --shadow: 0 15px 45px rgba(76, 9, 37, .10);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 85px;
-}
-
-body {
-  font-family: 'DM Sans', sans-serif;
-  color: var(--text);
-  background: var(--cream);
-  line-height: 1.7;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  font: inherit;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-.container {
-  width: min(1160px, 90%);
-  margin: auto;
-}
-
-.section {
-  padding: 90px 0;
-}
-
-.section-heading {
-  text-align: center;
-  max-width: 680px;
-  margin: 0 auto 45px;
-}
-
-.eyebrow {
-  display: inline-block;
-  color: var(--wine);
-  background: var(--pink);
-  border-radius: 30px;
-  padding: 7px 16px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  line-height: 1.2;
-}
-
-.section-heading h2 {
-  font-size: clamp(30px, 4vw, 46px);
-  margin-bottom: 15px;
-}
-
-.section-heading p {
-  color: var(--muted);
-}
-
-.top-strip {
-  background: var(--wine-dark);
-  color: white;
-  text-align: center;
-  padding: 8px 12px;
-  font-size: 12px;
-  letter-spacing: .6px;
-}
-
-.top-strip span {
-  color: #f4d49a;
-}
-
-header {
-  background: rgba(255, 250, 246, .96);
-  backdrop-filter: blur(14px);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 3px 20px rgba(0,0,0,.04);
-}
-
-.navbar {
-  min-height: 78px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 22px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-}
-
-.brand-mark {
-  width: 48px;
-  height: 48px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  color: white;
-  font-size: 24px;
-  background: linear-gradient(145deg, var(--wine), #a63a65);
-  box-shadow: 0 6px 16px rgba(118,19,59,.25);
-}
-
-.brand-name {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: var(--wine-dark);
-  line-height: 1.2;
-}
-
-.brand-subtitle {
-  font-size: 9px;
-  letter-spacing: 2px;
-  color: var(--muted);
-  text-transform: uppercase;
-  margin-top: 5px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 27px;
-}
-
-.nav-links a {
-  font-size: 13px;
-  font-weight: 700;
-  transition: color .25s;
-}
-
-.nav-links a:hover {
-  color: var(--wine);
-}
-
-.nav-cta,
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 13px 22px;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 13px;
-  border: 0;
-  cursor: pointer;
-  transition: transform .25s, box-shadow .25s, background .25s;
-}
-
-.nav-cta,
-.btn-primary {
-  background: var(--wine);
-  color: white;
-  box-shadow: 0 8px 20px rgba(118,19,59,.18);
-}
-
-.nav-cta:hover,
-.btn-primary:hover {
-  background: var(--wine-dark);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(118,19,59,.25);
-}
-
-.btn-outline {
-  border: 1px solid rgba(255,255,255,.7);
-  color: white;
-  background: transparent;
-}
-
-.btn-outline:hover {
-  background: white;
-  color: var(--wine);
-  transform: translateY(-3px);
-}
-
-.menu-toggle {
-  display: none;
-  border: none;
-  background: var(--pink);
-  color: var(--wine);
-  border-radius: 12px;
-  padding: 10px 13px;
-  font-size: 23px;
-  cursor: pointer;
-}
-
-/* HERO */
-
-.hero {
-  min-height: 660px;
-  display: flex;
-  align-items: center;
-  color: white;
-  position: relative;
-  isolation: isolate;
-  background:
-    linear-gradient(90deg, rgba(48, 5, 25, .92) 0%, rgba(67, 8, 35, .77) 48%, rgba(53, 9, 30, .18) 100%),
-    url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=2000&q=85') center 35%/cover no-repeat;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: linear-gradient(0deg, rgba(42,5,22,.35), transparent 55%);
-}
-
-.hero-content {
-  padding: 90px 0;
-  max-width: 710px;
-  animation: heroEnter 1s ease both;
-}
-
-.hero-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  border: 1px solid rgba(255,255,255,.35);
-  background: rgba(255,255,255,.09);
-  padding: 9px 16px;
-  border-radius: 40px;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-
-.hero-tag span {
-  color: #ffd68c;
-}
-
-.hero h1 {
-  font-size: clamp(42px, 6.5vw, 76px);
-  font-weight: 600;
-  letter-spacing: -1.5px;
-  margin-bottom: 22px;
-}
-
-.hero h1 em {
-  color: #f2c57d;
-  font-style: normal;
-}
-
-.hero p {
-  max-width: 550px;
-  color: rgba(255,255,255,.85);
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 13px;
-}
-
-.hero-note {
-  margin-top: 35px;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  font-size: 12px;
-  color: rgba(255,255,255,.82);
-}
-
-.note-icon {
-  width: 37px;
-  height: 37px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: rgba(255,255,255,.13);
-  color: #f2c57d;
-}
-
-/* MARQUEE */
-
-.marquee {
-  overflow: hidden;
-  background: var(--wine);
-  color: white;
-  padding: 15px 0;
-}
-
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marqueeMove 30s linear infinite;
-}
-
-.marquee-item {
-  white-space: nowrap;
-  padding: 0 26px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-.marquee-item span {
-  color: #f1cb88;
-  margin-right: 25px;
-}
-
-/* INTRO */
-
-.intro-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 65px;
-}
-
-.intro-visual {
-  position: relative;
-  padding: 0 0 25px 25px;
-}
-
-.intro-visual img {
-  height: 470px;
-  object-fit: cover;
-  border-radius: 180px 180px 18px 18px;
-  box-shadow: var(--shadow);
-}
-
-.intro-visual::before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: 10px;
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--gold);
-  border-radius: 180px 180px 18px 18px;
-  z-index: -1;
-}
-
-.floating-badge {
-  position: absolute;
-  bottom: 55px;
-  right: -15px;
-  background: white;
-  padding: 18px 23px;
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  animation: float 4s ease-in-out infinite;
-}
-
-.floating-badge strong {
-  display: block;
-  color: var(--wine);
-  font-family: 'Playfair Display', serif;
-  font-size: 23px;
-}
-
-.floating-badge small {
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.intro-copy h2 {
-  font-size: clamp(34px, 4vw, 48px);
-  margin-bottom: 20px;
-}
-
-.intro-copy h2 span {
-  color: var(--wine);
-}
-
-.intro-copy > p {
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-
-.check-list {
-  list-style: none;
-  display: grid;
-  gap: 14px;
-  margin: 25px 0 30px;
-}
-
-.check-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.check {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background: var(--pink);
-  color: var(--wine);
-  display: grid;
-  place-items: center;
-  font-size: 12px;
-}
-
-/* VALUES */
-
-.values-section {
-  background: #f8edf1;
-}
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.value-card {
-  padding: 34px 28px;
-  background: rgba(255,255,255,.88);
-  border: 1px solid rgba(118,19,59,.06);
-  border-radius: 20px;
-  transition: transform .3s, box-shadow .3s;
-}
-
-.value-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow);
-}
-
-.value-icon {
-  width: 57px;
-  height: 57px;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  border-radius: 17px;
-  background: var(--pink);
-  margin-bottom: 22px;
-}
-
-.value-card h3 {
-  font-size: 23px;
-  margin-bottom: 12px;
-}
-
-.value-card p {
-  color: var(--muted);
-  font-size: 14px;
-}
-
-/* PROMOTION */
-
-.promo-section {
-  padding: 80px 0;
-}
-
-.promo-box {
-  position: relative;
-  overflow: hidden;
-  border-radius: 28px;
-  padding: 65px;
-  color: white;
-  background:
-    linear-gradient(100deg, rgba(64,5,31,.96), rgba(118,19,59,.84)),
-    url('https://images.unsplash.com/photo-1583391733956-6c78276477e1?auto=format&fit=crop&w=1400&q=80') center/cover;
-}
-
-.promo-box::after {
-  content: "✦";
-  position: absolute;
-  right: 60px;
-  top: 15px;
-  font-size: 190px;
-  color: rgba(255,255,255,.07);
-  animation: slowRotate 20s linear infinite;
-}
-
-.promo-content {
-  position: relative;
-  z-index: 1;
-  max-width: 670px;
-}
-
-.promo-content .eyebrow {
-  background: rgba(255,255,255,.12);
-  color: #f2c57d;
-}
-
-.promo-content h2 {
-  font-size: clamp(34px, 5vw, 53px);
-  margin-bottom: 18px;
-}
-
-.promo-content p {
-  color: rgba(255,255,255,.8);
-  margin-bottom: 25px;
-  max-width: 560px;
-}
-
-/* GALLERY */
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 210px 210px;
-  gap: 15px;
-}
-
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 17px;
-  background: #eadde2;
-}
-
-.gallery-item:first-child {
-  grid-row: span 2;
-}
-
-.gallery-item:nth-child(4) {
-  grid-column: span 2;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .65s;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.09);
-}
-
-.gallery-item::after {
-  content: "";
-  position: absolute;
-  inset: 40% 0 0;
-  background: linear-gradient(transparent, rgba(42,5,22,.75));
-  pointer-events: none;
-}
-
-.gallery-label {
-  position: absolute;
-  bottom: 16px;
-  left: 17px;
-  color: white;
-  font-weight: 700;
-  z-index: 1;
-  font-size: 13px;
-}
-
-/* RUDRA */
-
-.rudra-section {
-  background: #fff;
-  padding: 45px 0;
-}
-
-.rudra-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-  border: 1px solid #eee1e6;
-  border-radius: 20px;
-  padding: 30px 35px;
-}
-
-.rudra-mark {
-  font-size: 34px;
-}
-
-.rudra-box h3 {
-  font-size: 24px;
-  margin-bottom: 6px;
-}
-
-.rudra-box p {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-/* CONTACT */
-
-.contact-section {
-  background: var(--pink);
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 40px;
-  align-items: start;
-}
-
-.contact-copy h2 {
-  font-size: clamp(34px, 4vw, 46px);
-  margin-bottom: 17px;
-}
-
-.contact-copy > p {
-  color: var(--muted);
-  margin-bottom: 30px;
-}
-
-.contact-item {
-  display: flex;
-  gap: 15px;
-  margin: 23px 0;
-  align-items: flex-start;
-}
-
-.contact-icon {
-  width: 47px;
-  height: 47px;
-  flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  background: white;
-  border-radius: 14px;
-  font-size: 20px;
-}
-
-.contact-item h3 {
-  font-size: 17px;
-  margin-bottom: 3px;
-}
-
-.contact-item p,
-.contact-item a {
-  color: var(--muted);
-  font-size: 13px;
-  overflow-wrap: anywhere;
-}
-
-.contact-card {
-  background: white;
-  border-radius: 24px;
-  padding: 35px;
-  box-shadow: var(--shadow);
-}
-
-.contact-card h3 {
-  font-size: 27px;
-  margin-bottom: 10px;
-}
-
-.contact-card > p {
-  font-size: 13px;
-  color: var(--muted);
-  margin-bottom: 25px;
-}
-
-.form-group {
-  margin-bottom: 16px;
-}
-
-.form-group label {
-  display: block;
-  font-size: 12px;
-  font-weight: 800;
-  margin-bottom: 7px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 13px 14px;
-  border: 1px solid #e8dce1;
-  background: #fffdfd;
-  border-radius: 11px;
-  outline: none;
-  font: inherit;
-  font-size: 14px;
-  transition: border .2s, box-shadow .2s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--wine);
-  box-shadow: 0 0 0 3px rgba(118,19,59,.08);
-}
-
-.form-group textarea {
-  min-height: 100px;
-  resize: vertical;
-}
-
-.contact-card .btn {
-  width: 100%;
-}
-
-/* FOOTER */
-
-footer {
-  background: #300519;
-  color: white;
-  padding: 50px 0 20px;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 35px;
-  padding-bottom: 35px;
-}
-
-.footer-brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 23px;
-  margin-bottom: 12px;
-}
-
-.footer-grid p {
-  font-size: 13px;
-  color: rgba(255,255,255,.65);
-}
-
-.footer-grid h3 {
-  font-size: 18px;
-  margin-bottom: 16px;
-}
-
-.footer-links {
-  display: grid;
-  gap: 9px;
-}
-
-.footer-links a {
-  color: rgba(255,255,255,.72);
-  font-size: 13px;
-  transition: color .2s;
-}
-
-.footer-links a:hover {
-  color: #f2c57d;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,.13);
-  padding-top: 18px;
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  flex-wrap: wrap;
-  font-size: 11px;
-  color: rgba(255,255,255,.55);
-}
-
-/* FLOATING WHATSAPP */
-
-.whatsapp-float {
-  position: fixed;
-  right: 20px;
-  bottom: 22px;
-  z-index: 900;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: #20b968;
-  color: white;
-  font-size: 27px;
-  box-shadow: 0 8px 24px rgba(0,0,0,.2);
-  transition: transform .25s;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-/* SCROLL ANIMATIONS */
-
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity .7s ease, transform .7s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes heroEnter {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-@keyframes marqueeMove {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-@keyframes slowRotate {
-  from { transform: rotate(0); }
-  to { transform: rotate(360deg); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: .01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-    transition-duration: .01ms !important;
-  }
-
-  .reveal {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-  .nav-links {
-    gap: 15px;
-  }
-
-  .nav-links a {
-    font-size: 12px;
-  }
-
-  .nav-cta {
-    padding: 11px 15px;
-  }
-
-  .intro-grid {
-    gap: 35px;
-  }
-
-  .intro-visual img {
-    height: 390px;
-  }
-
-  .gallery-grid {
-    grid-template-rows: 180px 180px;
-  }
-
-  .promo-box {
-    padding: 48px 35px;
-  }
-}
-
-@media (max-width: 720px) {
-  .section {
-    padding: 65px 0;
-  }
-
-  .navbar {
-    min-height: 70px;
-  }
-
-  .brand-name {
-    font-size: 15px;
-  }
-
-  .brand-mark {
-    width: 42px;
-    height: 42px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    padding: 18px 5% 25px;
-    background: var(--cream);
-    box-shadow: 0 15px 20px rgba(0,0,0,.07);
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 12px 0;
-    font-size: 14px;
-    border-bottom: 1px solid #eee1e6;
-  }
-
-  .nav-links .nav-cta {
-    margin-top: 14px;
-    text-align: center;
-  }
-
-  .hero {
-    min-height: 590px;
-    background-position: 60% center;
-  }
-
-  .hero-content {
-    padding: 70px 0;
-  }
-
-  .hero h1 {
-    font-size: clamp(39px, 11vw, 60px);
-  }
-
-  .hero p {
-    font-size: 14px;
-  }
-
-  .intro-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .intro-visual {
-    width: 88%;
-    margin: 0 auto;
-  }
-
-  .intro-visual img {
-    height: 390px;
-  }
-
-  .values-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .value-card {
-    padding: 28px;
-  }
-
-  .promo-box {
-    padding: 42px 25px;
-    border-radius: 20px;
-  }
-
-  .promo-box::after {
-    right: 0;
-    font-size: 120px;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 190px 190px 190px;
-    gap: 10px;
-  }
-
-  .gallery-item:first-child {
-    grid-row: span 2;
-  }
-
-  .gallery-item:nth-child(4) {
-    grid-column: auto;
-  }
-
-  .gallery-item:nth-child(5) {
-    grid-column: span 2;
-  }
-
-  .rudra-box {
-    align-items: flex-start;
-    padding: 25px;
-    flex-direction: column;
-  }
-
-  .contact-card {
-    padding: 25px 20px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 27px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 380px) {
-  .brand {
-    gap: 7px;
-  }
-
-  .brand-name {
-    font-size: 13px;
-  }
-
-  .hero-actions .btn {
-    width: 100%;
-  }
-
-  .gallery-grid {
-    grid-template-rows: 160px 160px 160px;
-  }
-}
-</style>
-</head>
-
-<body>
-
-<div class="top-strip">
-  Welcome to Shree Ram Wholesale Mart
-  <span> ✦ Quality • Trust • Tradition ✦</span>
-</div>
-
-<header>
-  <div class="container navbar">
-
-    <a href="#home" class="brand" aria-label="Shree Ram Wholesale Mart Home">
-      <div class="brand-mark">श्री</div>
-      <div>
-        <div class="brand-name">Shree Ram Wholesale Mart</div>
-        <div class="brand-subtitle">A Tradition of Trust</div>
-      </div>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle"
-      aria-label="Open navigation menu"
-      aria-expanded="false">☰</button>
-
-    <nav class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#values">Our Values</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="nav-cta">Get in Touch ↗</a>
-    </nav>
-
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO SECTION -->
-
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-
-        <div class="hero-tag">
-          <span>✦</span> Tradition Meets Elegance
-        </div>
-
-        <h1>
-          Every Thread<br>
-          Tells a Story of<br>
-          <em>Timeless Beauty.</em>
-        </h1>
-
-        <p>
-          Welcome to Shree Ram Wholesale Mart, where tradition,
-          quality and trust come together. Celebrating the beauty
-          of Indian fashion with a commitment to lasting relationships.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#about" class="btn btn-primary">
-            Discover Our Story <span>→</span>
-          </a>
-
-          <a href="#contact" class="btn btn-outline">
-            Contact Us ↗
-          </a>
-        </div>
-
-        <div class="hero-note">
-          <div class="note-icon">✦</div>
-          <div>
-            <strong>Rooted in Tradition. Focused on Quality.</strong><br>
-            Building trust, one relationship at a time.
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- MOVING BRAND STRIP -->
-
-  <div class="marquee" aria-label="Our brand values">
-    <div class="marquee-track">
-      <div class="marquee-item"><span>✦</span> QUALITY FIRST</div>
-      <div class="marquee-item"><span>✦</span> TRUSTED RELATIONSHIPS</div>
-      <div class="marquee-item"><span>✦</span> INDIAN TRADITION</div>
-      <div class="marquee-item"><span>✦</span> CUSTOMER COMMITMENT</div>
-      <div class="marquee-item"><span>✦</span> QUALITY FIRST</div>
-      <div class="marquee-item"><span>✦</span> TRUSTED RELATIONSHIPS</div>
-      <div class="marquee-item"><span>✦</span> INDIAN TRADITION</div>
-      <div class="marquee-item"><span>✦</span> CUSTOMER COMMITMENT</div>
-    </div>
-  </div>
-
-  <!-- ABOUT SECTION -->
-
-  <section class="section" id="about">
-    <div class="container intro-grid">
-
-      <div class="intro-visual reveal">
-        <img
-          src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=85"
-          alt="Elegant Indian traditional saree fashion"
-          loading="lazy">
-
-        <div class="floating-badge">
-          <strong>Since Day One</strong>
-          <small>Built on trust and tradition</small>
-        </div>
-      </div>
-
-      <div class="intro-copy reveal">
-        <span class="eyebrow">Our Story</span>
-
-        <h2>
-          Tradition in Our Roots.<br>
-          <span>Trust in Every Thread.</span>
-        </h2>
-
-        <p>
-          At Shree Ram Wholesale Mart, we believe that Indian fashion
-          is more than clothing. It represents culture, celebration,
-          craftsmanship and memories that last a lifetime.
-        </p>
-
-        <p>
-          Our aim is to build lasting relationships through dependable
-          service, thoughtful selection and a commitment to quality.
-          Every customer is an important part of our journey.
-        </p>
-
-        <ul class="check-list">
-          <li>
-            <span class="check">✓</span>
-            A commitment to quality and customer satisfaction
-          </li>
-          <li>
-            <span class="check">✓</span>
-            Respect for India's rich textile traditions
-          </li>
-          <li>
-            <span class="check">✓</span>
-            Long-term relationships built on trust
-          </li>
-        </ul>
-
-        <a href="#contact" class="btn btn-primary">
-          Connect With Us →
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- VALUES SECTION -->
-
-  <section class="section values-section" id="values">
-    <div class="container">
-
-      <div class="section-heading reveal">
-        <span class="eyebrow">What Defines Us</span>
-        <h2>More Than a Business.<br>A Promise of Trust.</h2>
-        <p>
-          The principles that guide us and shape every customer relationship.
-        </p>
-      </div>
-
-      <div class="values-grid">
-
-        <article class="value-card reveal">
-          <div class="value-icon">✧</div>
-          <h3>Quality First</h3>
-          <p>
-            We believe quality is the foundation of lasting trust.
-            We strive to make quality a priority in everything we do.
-          </p>
-        </article>
-
-        <article class="value-card reveal">
-          <div class="value-icon">♡</div>
-          <h3>Customer Care</h3>
-          <p>
-            Every relationship matters. We value honest communication,
-            thoughtful service and customer satisfaction.
-          </p>
-        </article>
-
-        <article class="value-card reveal">
-          <div class="value-icon">❋</div>
-          <h3>Indian Tradition</h3>
-          <p>
-            We celebrate the timeless charm of Indian textiles and
-            the beauty of traditions passed from one generation to another.
-          </p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PROMOTIONAL BANNER -->
-
-  <section class="promo-section">
-    <div class="container">
-      <div class="promo-box reveal">
-        <div class="promo-content">
-          <span class="eyebrow">Our Promise</span>
-
-          <h2>
-            Beautiful Traditions.<br>
-            Meaningful Relationships.
-          </h2>
-
-          <p>
-            Discover a business built around the values that matter:
-            quality, trust and a genuine commitment to customers.
-            We look forward to connecting with you.
-          </p>
-
-          <a href="#contact" class="btn btn-primary"
-            style="background:#fff;color:#76133b">
-            Let's Connect <span>→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-
-  <section class="section" id="gallery">
-    <div class="container">
-
-      <div class="section-heading reveal">
-        <span class="eyebrow">A Touch of Tradition</span>
-        <h2>The Beauty of Indian Fashion</h2>
-        <p>
-          A visual celebration of colours, textures and traditional elegance.
-        </p>
-      </div>
-
-      <div class="gallery-grid">
-
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80"
-            alt="Traditional saree inspiration"
-            loading="lazy">
-          <div class="gallery-label">Timeless Elegance</div>
-        </div>
-
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1583391733956-6c78276477e1?auto=format&fit=crop&w=600&q=80"
-            alt="Indian traditional clothing"
-            loading="lazy">
-          <div class="gallery-label">Indian Heritage</div>
-        </div>
-
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
-            alt="Traditional fashion inspiration"
-            loading="lazy">
-          <div class="gallery-label">Colours of India</div>
-        </div>
-
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1610189020678-5c9a2cbb9d11?auto=format&fit=crop&w=1000&q=80"
-            alt="Elegant ethnic fashion"
-            loading="lazy">
-          <div class="gallery-label">Grace in Every Detail</div>
-        </div>
-
-        <div class="gallery-item reveal">
-          <img
-            src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=700&q=80"
-            alt="Fashion and textile inspiration"
-            loading="lazy">
-          <div class="gallery-label">Inspired by Tradition</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- RUDRA SECTION -->
-
-  <section class="rudra-section">
-    <div class="container">
-      <div class="rudra-box reveal">
-        <div style="display:flex;align-items:center;gap:18px">
-          <div class="rudra-mark">🔱</div>
-          <div>
-            <h3>Tradition. Values. Blessings.</h3>
-            <p>
-              Inspired by Indian heritage and the values that bring us together.
-            </p>
-          </div>
-        </div>
-
-        <a href="#home" class="btn btn-primary">
-          Back to Top ↑
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-
-  <section class="section contact-section" id="contact">
-    <div class="container contact-grid">
-
-      <div class="contact-copy reveal">
-        <span class="eyebrow">Get in Touch</span>
-        <h2>Let's Start a Conversation.</h2>
-
-        <p>
-          Have a question or want to know more about Shree Ram Wholesale Mart?
-          We would love to hear from you.
-        </p>
-
-        <div class="contact-item">
-          <div class="contact-icon">📍</div>
-          <div>
-            <h3>Visit Us</h3>
-            <p>
-              Please add your complete shop address here.
-            </p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">📞</div>
-          <div>
-            <h3>Call Us</h3>
-            <p>
-              Add your business phone number to display it here.
-            </p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-icon">✉️</div>
-          <div>
-            <h3>Business Enquiries</h3>
-            <p>
-              Contact us for enquiries and business communication.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-card reveal">
-        <h3>Send Us a Message</h3>
-        <p>
-          Fill in your details and continue the conversation on WhatsApp.
-        </p>
-
-        <form id="contactForm">
-          <div class="form-group">
-            <label for="customerName">Your Name</label>
-            <input
-              id="customerName"
-              name="name"
-              type="text"
-              placeholder="Enter your name"
-              autocomplete="name"
-              required>
-          </div>
-
-          <div class="form-group">
-            <label for="customerPhone">Your Phone Number</label>
-            <input
-              id="customerPhone"
-              name="phone"
-              type="tel"
-              placeholder="Enter your phone number"
-              autocomplete="tel"
-              required>
-          </div>
-
-          <div class="form-group">
-            <label for="customerMessage">Your Message</label>
-            <textarea
-              id="customerMessage"
-              name="message"
-              placeholder="How can we help you?"
-              required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">
-            Continue on WhatsApp ↗
-          </button>
-        </form>
-
-        <p id="formNotice" role="status" aria-live="polite"
-          style="margin-top:12px"></p>
-      </div>
-
-    </div>
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-
-<footer>
-  <div class="container">
-
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">Shree Ram Wholesale Mart</div>
-        <p>
-          Celebrating Indian tradition with a commitment to quality,
-          trust and meaningful customer relationships.
-        </p>
-      </div>
-
-      <div>
-        <h3>Quick Links</h3>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#values">Our Values</a>
-          <a href="#gallery">Gallery</a>
-        </div>
-      </div>
-
-      <div>
-        <h3>Get Connected</h3>
-        <div class="footer-links">
-          <a href="#contact">Contact Us</a>
-          <a href="#contact">Business Enquiries</a>
-          <a href="#contact">Visit Our Shop</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Shree Ram Wholesale Mart. All rights reserved.</span>
-      <span>Made with ♥ and a love for Indian tradition.</span>
-    </div>
-
-  </div>
-</footer>
-
-<!-- WHATSAPP BUTTON -->
-
-<a
-  href="#contact"
-  class="whatsapp-float"
-  id="whatsappFloat"
-  aria-label="Contact us on WhatsApp"
-  title="Contact us on WhatsApp">✆</a>
-
-<script>
-(function () {
-  "use strict";
-
-  // Update copyright year automatically.
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
-
-  // Mobile navigation menu.
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
-
-  menuToggle.addEventListener("click", function () {
-    const isOpen = navLinks.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
-    menuToggle.textContent = isOpen ? "✕" : "☰";
-  });
-
-  // Close the mobile menu after selecting a navigation link.
-  navLinks.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", function () {
-      navLinks.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.textContent = "☰";
-    });
-  });
-
-  // Reveal sections smoothly as they enter the screen.
-  const revealElements = document.querySelectorAll(".reveal");
-
-  if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.12
-    });
-
-    revealElements.forEach(function (element) {
-      observer.observe(element);
-    });
-  } else {
-    revealElements.forEach(function (element) {
-      element.classList.add("visible");
-    });
-  }
-
-  /*
-    IMPORTANT:
-    Replace this placeholder with your real WhatsApp number.
-    Use country code + number, without +, spaces or dashes.
-    Example format for India: 91XXXXXXXXXX
-  */
-  const WHATSAPP_NUMBER = "91XXXXXXXXXX";
-
-  function openWhatsApp(message) {
-    if (!/^91\d{10}$/.test(WHATSAPP_NUMBER)) {
-      const notice = document.getElementById("formNotice");
-      notice.textContent =
-        "WhatsApp number set karne ke liye code mein WHATSAPP_NUMBER badlein.";
-      notice.style.color = "#76133b";
-      document.getElementById("contact").scrollIntoView({
-        behavior: "smooth"
-      });
-      return;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#681c2b">
+  <meta name="description" content="Welcome to Shree Ram Wholesale Mart, Balipur Chauraha, Gauriganj, Amethi. Quality, trust and value in one place.">
+  <title>Shree Ram Wholesale Mart | Quality • Trust • Value</title>  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">  <style>
+    :root {
+      --wine: #681c2b;
+      --wine-dark: #40101b;
+      --wine-light: #8e3042;
+      --cream: #fffaf3;
+      --gold: #d8ae65;
+      --gold-light: #f3dfb7;
+      --ink: #241c1c;
+      --muted: #786d6a;
+      --white: #ffffff;
+      --shadow: 0 18px 55px rgba(63, 16, 27, .12);
+      --radius: 24px;
     }
 
-    const url =
-      "https://wa.me/" +
-      WHATSAPP_NUMBER +
-      "?text=" +
-      encodeURIComponent(message);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    window.open(url, "_blank", "noopener,noreferrer");
-  }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
 
-  // Contact form: prepare a WhatsApp message.
-  // No message is sent automatically; the user confirms in WhatsApp.
-  document.getElementById("contactForm").addEventListener(
-    "submit",
-    function (event) {
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1140px, 90%);
+      margin: auto;
+    }
+
+    .announcement {
+      background: var(--wine-dark);
+      color: #fff4df;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 12px;
+      letter-spacing: 1.3px;
+      font-weight: 700;
+    }
+
+    .announcement span {
+      color: var(--gold);
+    }
+
+    header {
+      background: rgba(255, 250, 243, .95);
+      backdrop-filter: blur(16px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(104, 28, 43, .1);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .logo {
+      width: 54px;
+      height: 54px;
+      flex-shrink: 0;
+      border-radius: 17px;
+      display: grid;
+      place-items: center;
+      color: var(--gold-light);
+      background: linear-gradient(145deg, var(--wine), var(--wine-dark));
+      border: 2px solid var(--gold);
+      box-shadow: 0 5px 18px rgba(104, 28, 43, .2);
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .brand-name {
+      font-family: "Playfair Display", serif;
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--wine);
+      line-height: 1.2;
+    }
+
+    .brand-subtitle {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 700;
+      transition: color .25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--wine-light);
+    }
+
+    .nav-links .nav-cta {
+      color: white;
+      background: var(--wine);
+      padding: 11px 19px;
+      border-radius: 50px;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid #ead9d0;
+      background: white;
+      color: var(--wine);
+      width: 43px;
+      height: 43px;
+      border-radius: 12px;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      color: white;
+      background:
+        radial-gradient(ellipse at 80% 20%, rgba(216, 174, 101, .19), transparent 34%),
+        radial-gradient(ellipse at 10% 90%, rgba(216, 174, 101, .12), transparent 30%),
+        linear-gradient(125deg, #38101a 0%, #681c2b 55%, #8a3040 100%);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(243, 223, 183, .19);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 480px;
+      height: 480px;
+      right: -130px;
+      top: -120px;
+    }
+
+    .hero::after {
+      width: 340px;
+      height: 340px;
+      right: -60px;
+      top: -50px;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      align-items: center;
+      gap: 45px;
+      padding-top: 70px;
+      padding-bottom: 80px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--gold-light);
+      font-size: 11px;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    h1, h2, h3 {
+      font-family: "Playfair Display", serif;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 5.3vw, 72px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      max-width: 720px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+
+    .hero-description {
+      max-width: 520px;
+      margin: 25px 0 30px;
+      color: rgba(255,255,255,.79);
+      font-size: 15px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 14px 23px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 13px;
+      transition: transform .25s ease, box-shadow .25s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,0,0,.15);
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #f4dfb4, #d8ae65);
+      color: #38101a;
+    }
+
+    .btn-outline {
+      color: white;
+      border: 1px solid rgba(255,255,255,.4);
+      background: rgba(255,255,255,.05);
+    }
+
+    .hero-card-wrap {
+      position: relative;
+      padding: 25px;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(243,223,183,.45);
+      border-radius: 32px;
+      padding: 40px 28px;
+      text-align: center;
+      background: linear-gradient(145deg, rgba(255,255,255,.13), rgba(255,255,255,.04));
+      backdrop-filter: blur(12px);
+      box-shadow: 0 30px 70px rgba(0,0,0,.2);
+    }
+
+    .hero-emblem {
+      margin: 0 auto 20px;
+      width: 105px;
+      height: 105px;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold-light);
+      font-family: "Playfair Display", serif;
+      font-size: 31px;
+      font-weight: 800;
+      box-shadow: 0 0 0 9px rgba(216,174,101,.08);
+    }
+
+    .hero-card h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .hero-card p {
+      font-size: 13px;
+      color: rgba(255,255,255,.73);
+    }
+
+    .card-divider {
+      width: 65px;
+      height: 2px;
+      background: var(--gold);
+      margin: 22px auto;
+    }
+
+    .hero-card .trust-line {
+      color: var(--gold-light);
+      letter-spacing: 2px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .hero-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--gold), transparent, var(--gold));
+    }
+
+    section {
+      padding: 95px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .section-kicker {
+      color: var(--wine-light);
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      margin-bottom: 12px;
+    }
+
+    .section-heading h2 {
+      color: var(--wine-dark);
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.2;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 17px;
+    }
+
+    .about {
+      background: var(--cream);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .about-art {
+      min-height: 400px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(216,174,101,.23), transparent 37%),
+        linear-gradient(140deg, #f3e4d2, #ead3c3);
+      overflow: hidden;
+    }
+
+    .about-art::before {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      border: 1px solid rgba(104,28,43,.18);
+      border-radius: 50%;
+    }
+
+    .about-art::after {
+      content: "";
+      position: absolute;
+      width: 235px;
+      height: 235px;
+      border: 1px solid rgba(104,28,43,.15);
+      border-radius: 50%;
+    }
+
+    .about-art-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: var(--wine);
+    }
+
+    .about-art-symbol {
+      font-family: "Playfair Display", serif;
+      font-size: 76px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .about-art-inner p {
+      margin-top: 12px;
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .about-stamp {
+      position: absolute;
+      z-index: 3;
+      bottom: 28px;
+      right: 25px;
+      background: var(--wine);
+      color: white;
+      padding: 16px 20px;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      font-size: 12px;
+      font-weight: 800;
+      transform: rotate(-5deg);
+    }
+
+    .about-copy .section-kicker {
+      text-align: left;
+    }
+
+    .about-copy h2 {
+      color: var(--wine-dark);
+      font-size: clamp(32px, 4vw, 43px);
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .check-icon {
+      display: grid;
+      place-items: center;
+      width: 27px;
+      height: 27px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: #f0e0d1;
+      color: var(--wine);
+      font-weight: 900;
+    }
+
+    .values {
+      background: #f4e9dd;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .value-card {
+      background: rgba(255,255,255,.7);
+      padding: 33px 26px;
+      border: 1px solid rgba(104,28,43,.08);
+      border-radius: var(--radius);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+    }
+
+    .value-icon {
+      width: 57px;
+      height: 57px;
+      display: grid;
+      place-items: center;
+      border-radius: 17px;
+      background: var(--wine);
+      color: var(--gold-light);
+      font-size: 24px;
+      margin-bottom: 23px;
+    }
+
+    .value-card h3 {
+      font-size: 23px;
+      color: var(--wine-dark);
+      margin-bottom: 11px;
+    }
+
+    .value-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .promo {
+      position: relative;
+      overflow: hidden;
+      background: var(--wine-dark);
+      color: white;
+    }
+
+    .promo::before {
+      content: "";
+      position: absolute;
+      width: 460px;
+      height: 460px;
+      border: 1px solid rgba(216,174,101,.18);
+      border-radius: 50%;
+      top: -240px;
+      right: -80px;
+    }
+
+    .promo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .promo .section-kicker {
+      color: var(--gold);
+    }
+
+    .promo h2 {
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .promo h2 span {
+      color: var(--gold-light);
+      font-style: italic;
+    }
+
+    .promo-copy p {
+      color: rgba(255,255,255,.7);
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .promo-panel {
+      border: 1px solid rgba(216,174,101,.42);
+      border-radius: 28px;
+      padding: 34px;
+      background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.025));
+      text-align: center;
+    }
+
+    .promo-label {
+      color: var(--gold-light);
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .promo-price {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(65px, 8vw, 100px);
+      font-weight: 800;
+      color: var(--gold-light);
+      line-height: 1.15;
+      margin: 12px 0;
+    }
+
+    .promo-price small {
+      font-family: "DM Sans", sans-serif;
+      font-size: 20px;
+    }
+
+    .old-price {
+      color: rgba(255,255,255,.6);
+      font-size: 14px;
+    }
+
+    .old-price del {
+      color: #f1b8b8;
+      font-weight: 800;
+    }
+
+    .promo-badge {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 16px;
+      background: var(--gold-light);
+      color: var(--wine-dark);
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 12px;
+    }
+
+    .promo-note {
+      font-size: 11px;
+      color: rgba(255,255,255,.55);
+      margin-top: 18px;
+    }
+
+    .gallery {
+      background: var(--cream);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr .85fr;
+      grid-template-rows: 210px 210px;
+      gap: 16px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+      padding: 24px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #f2e0cc, #dfc1ad);
+      transition: transform .3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-item:first-child {
+      grid-row: span 2;
+      background: linear-gradient(150deg, #6b1c2b, #3c1019);
+      color: white;
+    }
+
+    .gallery-item:nth-child(2) {
+      background: linear-gradient(145deg, #e8d0b6, #f8eee1);
+    }
+
+    .gallery-item:nth-child(3) {
+      background: linear-gradient(145deg, #d6b77e, #f4e4c4);
+    }
+
+    .gallery-item:nth-child(4) {
+      background: linear-gradient(145deg, #ead8cc, #f7eee6);
+    }
+
+    .gallery-item:nth-child(5) {
+      background: linear-gradient(145deg, #7b3040, #a95a66);
+      color: white;
+    }
+
+    .gallery-decoration {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      font-family: "Playfair Display", serif;
+      font-size: 64px;
+      opacity: .2;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .gallery-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .gallery-text h3 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .gallery-text p {
+      font-size: 11px;
+      opacity: .8;
+    }
+
+    .contact {
+      background: #f4e9dd;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .contact-copy h2 {
+      color: var(--wine-dark);
+      font-size: clamp(32px, 4vw, 44px);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .contact-copy > p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 17px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.7);
+      transition: transform .25s ease;
+    }
+
+    .contact-detail:hover {
+      transform: translateX(4px);
+    }
+
+    .contact-icon {
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      width: 43px;
+      height: 43px;
+      background: var(--wine);
+      color: var(--gold-light);
+      border-radius: 13px;
+      font-size: 19px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      color: var(--wine-dark);
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+
+    .contact-detail p,
+    .contact-detail a {
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-detail a:hover {
+      color: var(--wine);
+      text-decoration: underline;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 26px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card h3 {
+      font-size: 26px;
+      color: var(--wine-dark);
+      margin-bottom: 8px;
+    }
+
+    .contact-card > p {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--wine-dark);
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 15px;
+      border: 1px solid #eaded6;
+      border-radius: 12px;
+      background: #fffcf8;
+      color: var(--ink);
+      outline: none;
+      transition: border .2s ease, box-shadow .2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--wine-light);
+      box-shadow: 0 0 0 3px rgba(104,28,43,.08);
+    }
+
+    .form-group textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .form-submit {
+      width: 100%;
+      background: var(--wine);
+      color: white;
+    }
+
+    .form-submit:hover {
+      background: var(--wine-light);
+    }
+
+    .form-note {
+      margin-top: 13px;
+      font-size: 10px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .final-cta {
+      background: linear-gradient(125deg, var(--wine), var(--wine-dark));
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(30px, 4vw, 42px);
+      margin-bottom: 12px;
+    }
+
+    .final-cta p {
+      color: rgba(255,255,255,.72);
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    footer {
+      background: #260b11;
+      color: white;
+      padding: 35px 0 22px;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .footer-brand {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .footer-brand .logo {
+      width: 47px;
+      height: 47px;
+      font-size: 16px;
+    }
+
+    .footer-brand strong {
+      font-family: "Playfair Display", serif;
+      font-size: 18px;
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,.55);
+      font-size: 10px;
+      letter-spacing: 1.5px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 19px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 11px;
+      color: rgba(255,255,255,.72);
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .copyright {
+      padding-top: 20px;
+      text-align: center;
+      color: rgba(255,255,255,.45);
+      font-size: 10px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      z-index: 1500;
+      right: 20px;
+      bottom: 20px;
+      width: 61px;
+      height: 61px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      background: #20bd5a;
+      box-shadow: 0 8px 28px rgba(15, 130, 62, .35);
+      font-size: 29px;
+      transition: transform .25s ease;
+      animation: pulse 2.5s infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 8px 28px rgba(15,130,62,.3); }
+      50% { box-shadow: 0 8px 32px rgba(15,130,62,.3), 0 0 0 9px rgba(32,189,90,.12); }
+    }
+
+    @media (max-width: 900px) {
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: 12px; }
+      .hero-grid { gap: 20px; }
+      .about-grid { gap: 35px; }
+      .promo-grid { gap: 30px; }
+      .contact-grid { gap: 25px; }
+    }
+
+    @media (max-width: 760px) {
+      .navbar { min-height: 73px; }
+      .brand-name { font-size: 16px; }
+      .brand-subtitle { font-size: 8px; letter-spacing: 1.5px; }
+      .logo { width: 47px; height: 47px; border-radius: 14px; font-size: 16px; }
+
+      .menu-toggle {
+        display: block;
+        flex-shrink: 0;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        padding: 18px 5% 24px;
+        background: var(--cream);
+        border-bottom: 1px solid #ead9d0;
+        box-shadow: 0 15px 25px rgba(0,0,0,.07);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-links.open { display: flex; }
+
+      .nav-links a {
+        padding: 12px 5px;
+        font-size: 14px;
+      }
+
+      .nav-links .nav-cta {
+        text-align: center;
+        margin-top: 8px;
+      }
+
+      .hero { min-height: auto; }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        padding-top: 65px;
+        padding-bottom: 60px;
+        gap: 30px;
+      }
+
+      .hero h1 { font-size: clamp(42px, 10vw, 59px); }
+      .hero-description { font-size: 14px; }
+      .hero-card-wrap { padding: 10px 15px; }
+      .hero-card { padding: 30px 22px; }
+      .hero-emblem { width: 85px; height: 85px; font-size: 26px; }
+
+      section { padding: 70px 0; }
+      .about-grid,
+      .promo-grid,
+      .contact-grid { grid-template-columns: 1fr; }
+
+      .about-art { min-height: 320px; }
+      .about-copy { order: -1; }
+      .about-copy .section-kicker { text-align: left; }
+
+      .values-grid { grid-template-columns: 1fr; }
+      .value-card { padding: 28px 24px; }
+
+      .promo-grid { gap: 35px; }
+      .promo-panel { padding: 28px 20px; }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 230px 170px 170px;
+        gap: 12px;
+      }
+
+      .gallery-item:first-child {
+        grid-column: span 2;
+        grid-row: auto;
+      }
+
+      .gallery-item { padding: 18px; }
+      .gallery-text h3 { font-size: 19px; }
+
+      .contact-card { padding: 24px 19px; }
+
+      .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-links { gap: 14px; }
+      .whatsapp-float { width: 55px; height: 55px; right: 15px; bottom: 15px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style></head><body>  <div class="announcement">
+    WELCOME TO <span>SHREE RAM WHOLESALE MART</span> &nbsp;•&nbsp; QUALITY, TRUST & VALUE
+  </div>  <header>
+    <div class="container navbar">
+      <a class="brand" href="#home" aria-label="Shree Ram Wholesale Mart home">
+        <div class="logo">श्री राम</div>
+        <div>
+          <div class="brand-name">Shree Ram Wholesale Mart</div>
+          <div class="brand-subtitle">Quality • Trust • Value</div>
+        </div>
+      </a>  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#values">Our Values</a>
+    <a href="#rudra">Rudra's Corner</a>
+    <a href="#gallery">Highlights</a>
+    <a href="#contact" class="nav-cta">Contact Us ↗</a>
+  </nav>
+</div>
+
+  </header>  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Your trusted local destination</div>
+          <h1>Good Choices.<br><span>Honest Value.</span><br>Every Time.</h1>
+          <p class="hero-description">
+            Welcome to Shree Ram Wholesale Mart — where trust meets value.
+            Visit us for a warm welcome, dependable service and a shopping
+            experience built around our customers.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#about">Discover Our Story ↗</a>
+            <a class="btn btn-outline" href="https://wa.me/919721039302?text=Namaste%20Shree%20Ram%20Wholesale%20Mart%2C%20mujhe%20jaankari%20chahiye." target="_blank" rel="noopener">WhatsApp Us ↗</a>
+          </div>
+        </div>    <div class="hero-card-wrap">
+      <div class="hero-card">
+        <div class="hero-emblem">श्री राम</div>
+        <h2>Shree Ram</h2>
+        <p>Wholesale Mart</p>
+        <div class="card-divider"></div>
+        <div class="trust-line">QUALITY • TRUST • VALUE</div>
+        <p style="margin-top:18px;">Proudly serving our local community</p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bottom"></div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-art reveal">
+      <div class="about-art-inner">
+        <div class="about-art-symbol">श्री राम</div>
+        <p>TRUST IN EVERY STEP</p>
+      </div>
+      <div class="about-stamp">Your Local Store ✦</div>
+    </div>
+
+    <div class="about-copy reveal">
+      <div class="section-kicker">A little about us</div>
+      <h2>Built on Trust.<br>Driven by Value.</h2>
+      <p>
+        At Shree Ram Wholesale Mart, we believe a great shopping experience
+        starts with trust, respect and genuine care for every customer.
+      </p>
+      <p>
+        Our goal is simple: welcome every visitor warmly, provide helpful
+        service and build long-lasting relationships with the people in
+        our community.
+      </p>
+      <p>
+        We are proud to serve customers in and around Gauriganj, Amethi.
+        Your support inspires us to keep doing better every day.
+      </p>
+
+      <div class="check-list">
+        <div class="check-item"><span class="check-icon">✓</span> Customer-first service</div>
+        <div class="check-item"><span class="check-icon">✓</span> A welcoming local shopping experience</div>
+        <div class="check-item"><span class="check-icon">✓</span> Trust, respect and lasting relationships</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values" id="values">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="section-kicker">What matters to us</div>
+      <h2>Our Promise to You</h2>
+      <p>Every interaction is an opportunity to earn your trust and make your visit worthwhile.</p>
+    </div>
+
+    <div class="values-grid">
+      <article class="value-card reveal">
+        <div class="value-icon">✦</div>
+        <h3>Quality</h3>
+        <p>We care about your experience and strive to offer dependable service and value with every visit.</p>
+      </article>
+
+      <article class="value-card reveal">
+        <div class="value-icon">♡</div>
+        <h3>Trust</h3>
+        <p>Honest communication, friendly service and respect for our customers are at the heart of our work.</p>
+      </article>
+
+      <article class="value-card reveal">
+        <div class="value-icon">₹</div>
+        <h3>Value</h3>
+        <p>We believe good service should feel worthwhile. We work to make every customer feel welcome.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="promo" id="rudra">
+  <div class="container promo-grid">
+    <div class="promo-copy reveal">
+      <div class="section-kicker">A special corner</div>
+      <h2>Introducing<br><span>Rudra's Corner</span></h2>
+      <p>
+        Your style deserves a fresh upgrade! Check out our special
+        branded T-shirt offer and contact us on WhatsApp for details,
+        available designs and sizes.
+      </p>
+      <a class="btn btn-gold" href="https://wa.me/919721039302?text=Namaste%2C%20mujhe%20Rudra%27s%20Corner%20ke%20branded%20T-shirts%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" rel="noopener">
+        Ask About T-Shirts ↗
+      </a>
+    </div>
+
+    <div class="promo-panel reveal">
+      <div class="promo-label">Rudra's Corner • Special Offer</div>
+      <div class="promo-price"><small>₹</small>299</div>
+      <div class="old-price">Regular price <del>₹799</del></div>
+      <div class="promo-badge">Branded T-Shirts • Special Price</div>
+      <p class="promo-note">Please confirm available brands, sizes and designs on WhatsApp.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="section-kicker">The Shree Ram experience</div>
+      <h2>A Name You Can Trust</h2>
+      <p>More than a store — a commitment to friendly service, customer care and community.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal">
+        <div class="gallery-decoration">श्री</div>
+        <div class="gallery-text">
+          <h3>Shree Ram Wholesale Mart</h3>
+          <p>Your local destination in Gauriganj, Amethi</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <div class="gallery-decoration">✦</div>
+        <div class="gallery-text">
+          <h3>Quality First</h3>
+          <p>Every customer matters</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <div class="gallery-decoration">₹</div>
+        <div class="gallery-text">
+          <h3>Great Value</h3>
+          <p>Value you can appreciate</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <div class="gallery-decoration">♡</div>
+        <div class="gallery-text">
+          <h3>Customer Care</h3>
+          <p>Friendly, helpful service</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <div class="gallery-decoration">R</div>
+        <div class="gallery-text">
+          <h3>Rudra's Corner</h3>
+          <p>Branded T-shirts at ₹299</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy reveal">
+      <div class="section-kicker">We'd love to hear from you</div>
+      <h2>Let's Connect.</h2>
+      <p>
+        Have a question or want to know more about our store or Rudra's
+        Corner T-shirt offer? Get in touch with us.
+      </p>
+
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="contact-icon">⌖</div>
+          <div>
+            <strong>Visit Our Store</strong>
+            <a href="https://www.google.com/maps/search/?api=1&query=Balipur+Chauraha%2C+Gauriganj%2C+Amethi%2C+Uttar+Pradesh%2C+India" target="_blank" rel="noopener">
+              Balipur Chauraha, Gauriganj,<br>Amethi, Uttar Pradesh, India ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">☎</div>
+          <div>
+            <strong>Call Us</strong>
+            <a href="tel:+919721039302">+91 97210 39302</a>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">◉</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/919721039302?text=Namaste%20Shree%20Ram%20Wholesale%20Mart" target="_blank" rel="noopener">
+              Chat with us directly ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-card reveal">
+      <h3>Send Us a Message</h3>
+      <p>Fill in your details and we'll open WhatsApp with your message ready to send.</p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="customerName">Your Name</label>
+          <input id="customerName" name="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="customerPhone">Your Phone Number</label>
+          <input id="customerPhone" name="phone" type="tel" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="customerMessage">Your Message</label>
+          <textarea id="customerMessage" name="message" placeholder="How can we help you?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn form-submit">Send via WhatsApp ↗</button>
+        <div class="form-note">Your message will open in WhatsApp. Tap Send there to submit it.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container reveal">
+    <h2>Thank You for Your Trust.</h2>
+    <p>Shree Ram Wholesale Mart — proudly serving Gauriganj, Amethi.</p>
+    <a class="btn btn-gold" href="https://wa.me/919721039302?text=Namaste%20Shree%20Ram%20Wholesale%20Mart" target="_blank" rel="noopener">
+      Connect on WhatsApp ↗
+    </a>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <a class="footer-brand" href="#home">
+          <div class="logo">श्री राम</div>
+          <div>
+            <strong>Shree Ram Wholesale Mart</strong>
+            <p>QUALITY • TRUST • VALUE</p>
+          </div>
+        </a>    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#rudra">Rudra's Corner</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Balipur+Chauraha%2C+Gauriganj%2C+Amethi%2C+Uttar+Pradesh%2C+India" target="_blank" rel="noopener">Directions ↗</a>
+    </div>
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> Shree Ram Wholesale Mart. All rights reserved.
+  </div>
+</div>
+
+  </footer><a class="whatsapp-float"
+href="https://wa.me/919721039302?text=Namaste%20Shree%20Ram%20Wholesale%20Mart"
+target="_blank"
+rel="noopener"
+aria-label="Chat with Shree Ram Wholesale Mart on WhatsApp"
+title="Chat on WhatsApp">
+☎
+</a>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    // Close the mobile menu after choosing a section
+    document.querySelectorAll("#navLinks a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // Reveal animations as sections enter the screen
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      revealElements.forEach(function (element) {
+        observer.observe(element);
+      });
+    } else {
+      revealElements.forEach(function (element) {
+        element.classList.add("visible");
+      });
+    }
+
+    // Contact form opens WhatsApp with the visitor's details
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
       event.preventDefault();
 
-      const name =
-        document.getElementById("customerName").value.trim();
-
-      const phone =
-        document.getElementById("customerPhone").value.trim();
-
-      const message =
-        document.getElementById("customerMessage").value.trim();
+      const name = document.getElementById("customerName").value.trim();
+      const phone = document.getElementById("customerPhone").value.trim();
+      const message = document.getElementById("customerMessage").value.trim();
 
       if (!name || !phone || !message) {
-        document.getElementById("formNotice").textContent =
-          "Please saari details bharein.";
+        alert("Please fill in all fields.");
         return;
       }
 
       const whatsappMessage =
-        "Namaste Shree Ram Wholesale Mart!\n\n" +
-        "Name: " + name + "\n" +
-        "Phone: " + phone + "\n" +
-        "Message: " + message;
+        "Namaste Shree Ram Wholesale Mart!" +
+        "\nName: " + name +
+        "\nPhone: " + phone +
+        "\nMessage: " + message;
 
-      openWhatsApp(whatsappMessage);
-    }
-  );
+      const whatsappURL =
+        "https://wa.me/919721039302?text=" +
+        encodeURIComponent(whatsappMessage);
 
-  // Floating WhatsApp button.
-  document.getElementById("whatsappFloat").addEventListener(
-    "click",
-    function (event) {
-      if (!/^91\d{10}$/.test(WHATSAPP_NUMBER)) {
-        // Until a real number is configured, go to the contact section.
-        event.preventDefault();
-        document.getElementById("contact").scrollIntoView({
-          behavior: "smooth"
-        });
-        document.getElementById("formNotice").textContent =
-          "WhatsApp contact activate karne ke liye apna number code mein add karein.";
-        return;
-      }
+      window.open(whatsappURL, "_blank", "noopener");
+    });
 
-      event.preventDefault();
-      openWhatsApp("Namaste Shree Ram Wholesale Mart! Mujhe aapke business ke baare mein jaankari chahiye.");
-    }
-  );
-
-})();
-</script>
-
-</body>
+    // Automatically update the copyright year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script></body>
 </html>
