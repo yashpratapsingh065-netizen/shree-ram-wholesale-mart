@@ -564,6 +564,400 @@ body {
     </nav>
   </div>
 </header>
+  <!-- E-COMMERCE SEARCH BAR -->
+<section class="shop-search">
+  <div class="wrap">
+    <div class="search-box">
+      <span>🔍</span>
+      <input
+        type="search"
+        id="productSearch"
+        placeholder="Search sarees, silk, cotton..."
+        aria-label="Search products"
+      >
+      <button type="button" onclick="searchProducts()">Search</button>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT CATEGORIES -->
+<nav class="category-nav" aria-label="Product categories">
+  <div class="wrap category-list">
+    <button class="category-chip active"
+      onclick="filterProducts('all', this)">All Products</button>
+
+    <button class="category-chip"
+      onclick="filterProducts('silk', this)">Silk Sarees</button>
+
+    <button class="category-chip"
+      onclick="filterProducts('cotton', this)">Cotton Sarees</button>
+
+    <button class="category-chip"
+      onclick="filterProducts('designer', this)">Designer Sarees</button>
+
+    <button class="category-chip"
+      onclick="filterProducts('party', this)">Party Wear</button>
+  </div>
+</nav>
+
+<!-- PROMOTIONAL BANNER -->
+<section class="wrap">
+  <div class="shop-banner">
+    <div class="shop-banner-content">
+      <span class="tag">✨ NEW COLLECTION</span>
+
+      <h2>
+        Discover Your<br>
+        <span>Perfect Saree</span>
+      </h2>
+
+      <p>
+        Beautiful designs, elegant colours and styles for
+        every occasion. Explore our saree collection.
+      </p>
+
+      <a href="#sareeCollection" class="btn gold">
+        Shop Sarees →
+      </a>
+    </div>
+
+    <img
+      src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85"
+      alt="Traditional Indian ethnic fashion"
+      onerror="this.style.display='none'"
+    >
+  </div>
+</section>
+
+<!-- SAREE COLLECTION -->
+<section class="products-section wrap" id="sareeCollection">
+
+  <div class="products-heading">
+    <div>
+      <h2>🛍️ Saree Collection</h2>
+      <p>Explore elegant styles for every occasion.</p>
+    </div>
+
+    <span class="product-count" id="productCount">
+      8 Products
+    </span>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+
+    <!-- PRODUCT 1 -->
+    <article class="product-card"
+      data-name="red silk saree"
+      data-category="silk">
+
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+          alt="Red traditional saree"
+          loading="lazy"
+        >
+        <span class="product-badge">BESTSELLER</span>
+        <button class="wishlist" aria-label="Add to wishlist"
+          onclick="toggleWishlist(this)">♡</button>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">Silk Collection</span>
+        <h3>Elegant Traditional Silk Saree</h3>
+        <div class="product-rating">★★★★★ <span>Premium Style</span></div>
+
+        <div class="product-prices">
+          <span class="product-price">₹899</span>
+          <span class="old-price">₹1,499</span>
+          <span class="discount">40% OFF</span>
+        </div>
+
+        <button class="add-cart"
+          onclick="addToCart('Elegant Traditional Silk Saree', 899)">
+          🛒 Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- PRODUCT 2 -->
+    <article class="product-card"
+      data-name="floral designer saree"
+      data-category="designer">
+
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1583391733956-6c78276477e3?auto=format&fit=crop&w=600&q=80"
+          alt="Designer ethnic fashion"
+          loading="lazy"
+        >
+        <span class="product-badge">NEW</span>
+        <button class="wishlist" aria-label="Add to wishlist"
+          onclick="toggleWishlist(this)">♡</button>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">Designer Collection</span>
+        <h3>Designer Floral Saree</h3>
+        <div class="product-rating">★★★★★ <span>Elegant Look</span></div>
+
+        <div class="product-prices">
+          <span class="product-price">₹699</span>
+          <span class="old-price">₹1,099</span>
+          <span class="discount">36% OFF</span>
+        </div>
+
+        <button class="add-cart"
+          onclick="addToCart('Designer Floral Saree', 699)">
+          🛒 Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- PRODUCT 3 -->
+    <article class="product-card"
+      data-name="party wear saree"
+      data-category="party">
+
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1617625095210-9a4c0e2f5e2b?auto=format&fit=crop&w=600&q=80"
+          alt="Party wear ethnic outfit"
+          loading="lazy"
+        >
+        <span class="product-badge">TRENDING</span>
+        <button class="wishlist" aria-label="Add to wishlist"
+          onclick="toggleWishlist(this)">♡</button>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">Party Wear</span>
+        <h3>Festive Party Wear Saree</h3>
+        <div class="product-rating">★★★★★ <span>Festive Style</span></div>
+
+        <div class="product-prices">
+          <span class="product-price">₹1,199</span>
+          <span class="old-price">₹1,799</span>
+          <span class="discount">33% OFF</span>
+        </div>
+
+        <button class="add-cart"
+          onclick="addToCart('Festive Party Wear Saree', 1199)">
+          🛒 Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- PRODUCT 4 -->
+    <article class="product-card"
+      data-name="cotton daily wear saree"
+      data-category="cotton">
+
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1610189012906-4c5f6b5b8e63?auto=format&fit=crop&w=600&q=80"
+          alt="Traditional everyday ethnic wear"
+          loading="lazy"
+        >
+        <button class="wishlist" aria-label="Add to wishlist"
+          onclick="toggleWishlist(this)">♡</button>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">Cotton Collection</span>
+        <h3>Comfortable Cotton Saree</h3>
+        <div class="product-rating">★★★★★ <span>Everyday Wear</span></div>
+
+        <div class="product-prices">
+          <span class="product-price">₹499</span>
+          <span class="old-price">₹799</span>
+          <span class="discount">38% OFF</span>
+        </div>
+
+        <button class="add-cart"
+          onclick="addToCart('Comfortable Cotton Saree', 499)">
+          🛒 Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- PRODUCT 5 -->
+    <article class="product-card"
+      data-name="wedding silk saree"
+      data-category="silk">
+
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1610030469668-8e9f641aaf4a?auto=format&fit=crop&w=600&q=80"
+          alt="Wedding occasion ethnic fashion"
+          loading="lazy"
+        >
+        <span class="product-badge">POPULAR</span>
+        <button class="wishlist" aria-label="Add to wishlist"
+          onclick="toggleWishlist(this)">♡</button>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">Wedding Collection</span>
+        <h3>Wedding Special Silk Saree</h3>
+        <div class="product-rating">★★★★★ <span>Festive Favourite</span></div>
+
+        <div class="product-prices">
+          <span class="product-price">₹1,499</span>
+          <span class="old-price">₹2,299</span>
+          <span class="discount">35% OFF</span>
+        </div>
+
+        <button class="add-cart"
+          onclick="addToCart('Wedding Special Silk Saree', 1499)">
+          🛒 Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- PRODUCT 6 -->
+    <article class="product-card"
+      data-name="printed cotton saree"
+      data-category="cotton">
+
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=600&q=80"
+          alt="Printed ethnic fashion"
+          loading="lazy"
+        >
+        <button class="wishlist" aria-label="Add to wishlist"
+          onclick="toggleWishlist(this)">♡</button>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">Cotton Collection</span>
+        <h3>Printed Daily Wear Saree</h3>
+        <div class="product-rating">★★★★★ <span>Classic Style</span></div>
+
+        <div class="product-prices">
+          <span class="product-price">₹399</span>
+          <span class="old-price">₹649</span>
+          <span class="discount">39% OFF</span>
+        </div>
+
+        <button class="add-cart"
+          onclick="addToCart('Printed Daily Wear Saree', 399)">
+          🛒 Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- PRODUCT 7 -->
+    <article class="product-card"
+      data-name="designer occasion saree"
+      data-category="designer">
+
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=600&q=80"
+          alt="Designer fashion collection"
+          loading="lazy"
+        >
+        <span class="product-badge">SPECIAL</span>
+        <button class="wishlist" aria-label="Add to wishlist"
+          onclick="toggleWishlist(this)">♡</button>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">Designer Collection</span>
+        <h3>Premium Designer Occasion Saree</h3>
+        <div class="product-rating">★★★★★ <span>Special Occasion</span></div>
+
+        <div class="product-prices">
+          <span class="product-price">₹999</span>
+          <span class="old-price">₹1,599</span>
+          <span class="discount">38% OFF</span>
+        </div>
+
+        <button class="add-cart"
+          onclick="addToCart('Premium Designer Occasion Saree', 999)">
+          🛒 Add to Cart
+        </button>
+      </div>
+    </article>
+
+    <!-- PRODUCT 8 -->
+    <article class="product-card"
+      data-name="festive party saree"
+      data-category="party">
+
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80"
+          alt="Festive traditional clothing"
+          loading="lazy"
+        >
+        <span class="product-badge">FESTIVE</span>
+        <button class="wishlist" aria-label="Add to wishlist"
+          onclick="toggleWishlist(this)">♡</button>
+      </div>
+
+      <div class="product-info">
+        <span class="product-category">Festive Collection</span>
+        <h3>Festive Occasion Saree</h3>
+        <div class="product-rating">★★★★★ <span>Festive Style</span></div>
+
+        <div class="product-prices">
+          <span class="product-price">₹799</span>
+          <span class="old-price">₹1,199</span>
+          <span class="discount">33% OFF</span>
+        </div>
+
+        <button class="add-cart"
+          onclick="addToCart('Festive Occasion Saree', 799)">
+          🛒 Add to Cart
+        </button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- SHOPPING BENEFITS -->
+<section class="wrap shop-trust">
+  <div class="trust-item">
+    <span class="trust-icon">✨</span>
+    <div>
+      <strong>Beautiful Designs</strong>
+      <small>Styles for every occasion</small>
+    </div>
+  </div>
+
+  <div class="trust-item">
+    <span class="trust-icon">💰</span>
+    <div>
+      <strong>Wholesale Value</strong>
+      <small>Great value for your money</small>
+    </div>
+  </div>
+
+  <div class="trust-item">
+    <span class="trust-icon">🛍️</span>
+    <div>
+      <strong>Easy Shopping</strong>
+      <small>Browse our collections</small>
+    </div>
+  </div>
+
+  <div class="trust-item">
+    <span class="trust-icon">📍</span>
+    <div>
+      <strong>Visit Our Store</strong>
+      <small>Balipur Chauraha, Amethi</small>
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING CART -->
+<button class="cart-float" onclick="showCart()" aria-live="polite">
+  🛒 Cart (<span id="cartCount">0</span>)
+  · ₹<span id="cartTotal">0</span>
+</button>
 <main>
 <section class="hero" id="home">
  <div class="wrap hero-grid">
